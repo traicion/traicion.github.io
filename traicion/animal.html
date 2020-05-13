@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>traición enigmática</title>
+    <meta charset="UTF-8">
+
+    <script src="https://cdnjs.deepai.org/deepai.min.js">
+
+      deepai.setApiKey('17f362f6-4616-4204-9361-f7cfa39444f7');
+
+      let x = await (async function() {
+        var resp = await deepai.callStandardApi("text2img", {
+                text: "mosh",
+        });
+        console.log(resp);
+      })();
+      console.log(x);
+    </script>
+  </head>
+
+  <body>
+    <p>intenté algo con este script pero tampoco funcionó. </p>
+    <p>igual sí está haciendo la conexión, pero no se está llamando la función </p>
+  </body>
+</html>
