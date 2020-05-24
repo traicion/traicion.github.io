@@ -199,7 +199,7 @@
       rand_nombres = Math.floor(Math.random()*(nombres.length-1));
 
       if (ipCliente == ipmelanie){x.innerHTML = "melanie traicionó a " + sust[rand_sust] + ".";}
-      else {x.innerHTML = nombres[rand_nombres] + " traicionó a " + sust[rand_sust] + ".";}
+      else {x.innerHTML = "melanie traicionó a " + sust[rand_sust] + ".";} //{x.innerHTML = nombres[rand_nombres] + " traicionó a " + sust[rand_sust] + ".";}
     }
     document.addEventListener('DOMContentLoaded', function() {
       cambiar();
