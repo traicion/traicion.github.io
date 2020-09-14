@@ -6,7 +6,10 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166036031-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'UA-166036031-1');
@@ -106,12 +109,13 @@
 
         li {
             float: left;
-            background-color: rgba(0,0,0,0.05);
+            background-color: rgba(0, 0, 0, 0.05);
             border-right: 1px solid grey;
             border-bottom: 1px solid grey;
         }
 
-        li a, .dropbtn {
+        li a,
+        .dropbtn {
             display: inline-block;
             color: white;
             text-align: center;
@@ -119,7 +123,8 @@
             text-decoration: none;
         }
 
-        li a:hover, .dropdown:hover .dropbtn {
+        li a:hover,
+        .dropdown:hover .dropbtn {
             background-color: rgb(190, 56, 179);
             border-left: 1px solid grey;
             border-right: 1px solid grey;
@@ -135,7 +140,7 @@
             position: absolute;
             background-color: #f9f9f9;
             min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             z-index: 1;
         }
 
@@ -147,7 +152,9 @@
             text-align: left;
         }
 
-        .dropdown-content a:hover {background-color: #f1f1f1;}
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
 
         .dropdown:hover .dropdown-content {
             display: block;
@@ -289,6 +296,7 @@
             return a;
         }
         var nums = shuffle([...Array(57).keys()]);
+
         function crearTag(i) {
             var img = '<img src=\"contenido/mosh/';
             img += nums[i];
@@ -323,7 +331,9 @@
     </ul>
 
     <header>
-        <div class="titulo"><h1> <a href="index.html" style="text-decoration: none; color: white; cursor:pointer;">traición</a></h1></div>
+        <div class="titulo">
+            <h1> <a href="index.html" style="text-decoration: none; color: white; cursor:pointer;">traición</a></h1>
+        </div>
     </header>
     <article style="border-bottom-style: solid;border-bottom-color: grey;">
         <h1 style="font-size: 40pt; color: ivory;">pociones y elixires</h1>
@@ -332,67 +342,181 @@
 
     <div class="row" style="background-color: rgba(221, 47, 198, 0.4); padding-bottom: 8px;">
         <div class="column">
-            <script type="text/javascript">document.write(crearTag(0));</script>
-            <script type="text/javascript">document.write(crearTag(1));</script>
-            <script type="text/javascript">document.write(crearTag(2));</script>
-            <script type="text/javascript">document.write(crearTag(3));</script>
-            <script type="text/javascript">document.write(crearTag(4));</script>
-            <script type="text/javascript">document.write(crearTag(5));</script>
-            <script type="text/javascript">document.write(crearTag(6));</script>
-            <script type="text/javascript">document.write(crearTag(7));</script>
-            <script type="text/javascript">document.write(crearTag(8));</script>
-            <script type="text/javascript">document.write(crearTag(9));</script>
-            <script type="text/javascript">document.write(crearTag(10));</script>
-            <script type="text/javascript">document.write(crearTag(11));</script>
-            <script type="text/javascript">document.write(crearTag(12));</script>
-            <script type="text/javascript">document.write(crearTag(13));</script>
-            <script type="text/javascript">document.write(crearTag(14));</script>
-            <script type="text/javascript">document.write(crearTag(15));</script>
-            <script type="text/javascript">document.write(crearTag(16));</script>
-            <script type="text/javascript">document.write(crearTag(17));</script>
-            <script type="text/javascript">document.write(crearTag(18));</script>
-            <script type="text/javascript">document.write(crearTag(19));</script>
+            <script type="text/javascript">
+                document.write(crearTag(0));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(1));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(2));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(3));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(4));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(5));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(6));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(7));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(8));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(9));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(10));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(11));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(12));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(13));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(14));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(15));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(16));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(17));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(18));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(19));
+            </script>
         </div>
         <div class="column">
-            <script type="text/javascript">document.write(crearTag(20));</script>
-            <script type="text/javascript">document.write(crearTag(21));</script>
-            <script type="text/javascript">document.write(crearTag(22));</script>
-            <script type="text/javascript">document.write(crearTag(23));</script>
-            <script type="text/javascript">document.write(crearTag(24));</script>
-            <script type="text/javascript">document.write(crearTag(25));</script>
-            <script type="text/javascript">document.write(crearTag(26));</script>
-            <script type="text/javascript">document.write(crearTag(27));</script>
-            <script type="text/javascript">document.write(crearTag(28));</script>
-            <script type="text/javascript">document.write(crearTag(29));</script>
-            <script type="text/javascript">document.write(crearTag(30));</script>
-            <script type="text/javascript">document.write(crearTag(31));</script>
-            <script type="text/javascript">document.write(crearTag(32));</script>
-            <script type="text/javascript">document.write(crearTag(33));</script>
-            <script type="text/javascript">document.write(crearTag(34));</script>
-            <script type="text/javascript">document.write(crearTag(35));</script>
-            <script type="text/javascript">document.write(crearTag(36));</script>
-            <script type="text/javascript">document.write(crearTag(37));</script>
+            <script type="text/javascript">
+                document.write(crearTag(20));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(21));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(22));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(23));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(24));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(25));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(26));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(27));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(28));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(29));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(30));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(31));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(32));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(33));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(34));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(35));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(36));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(37));
+            </script>
         </div>
         <div class="column">
-            <script type="text/javascript">document.write(crearTag(38));</script>
-            <script type="text/javascript">document.write(crearTag(39));</script>
-            <script type="text/javascript">document.write(crearTag(40));</script>
-            <script type="text/javascript">document.write(crearTag(41));</script>
-            <script type="text/javascript">document.write(crearTag(42));</script>
-            <script type="text/javascript">document.write(crearTag(43));</script>
-            <script type="text/javascript">document.write(crearTag(44));</script>
-            <script type="text/javascript">document.write(crearTag(45));</script>
-            <script type="text/javascript">document.write(crearTag(46));</script>
-            <script type="text/javascript">document.write(crearTag(47));</script>
-            <script type="text/javascript">document.write(crearTag(48));</script>
-            <script type="text/javascript">document.write(crearTag(49));</script>
-            <script type="text/javascript">document.write(crearTag(50));</script>
-            <script type="text/javascript">document.write(crearTag(51));</script>
-            <script type="text/javascript">document.write(crearTag(52));</script>
-            <script type="text/javascript">document.write(crearTag(53));</script>
-            <script type="text/javascript">document.write(crearTag(54));</script>
-            <script type="text/javascript">document.write(crearTag(55));</script>
-            <script type="text/javascript">document.write(crearTag(56));</script>
+            <script type="text/javascript">
+                document.write(crearTag(38));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(39));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(40));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(41));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(42));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(43));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(44));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(45));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(46));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(47));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(48));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(49));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(50));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(51));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(52));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(53));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(54));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(55));
+            </script>
+            <script type="text/javascript">
+                document.write(crearTag(56));
+            </script>
         </div>
     </div>
     <footer style="color:#ff23cf">
