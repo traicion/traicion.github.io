@@ -1,0 +1,6 @@
+DirectoryIndex index.html
+ErrorDocument 404 https://www.youtube.com/watch?v=gCs4SpNGSQw
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^.]+)$ $1.php [NC,L]
+RewriteRule ^([^.]+)$ $1.html [NC,L]

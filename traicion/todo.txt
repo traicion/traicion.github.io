@@ -1,0 +1,5 @@
+- cambiar cursor sobre títulos 
+- cuentas de instagram
+- crear tu cuenta falso
+- funcionar enter en pssword
+- error 404

@@ -1,0 +1,175 @@
+<html lang="es">
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166036031-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-166036031-1');
+    </script>
+    <title>lamiel</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" type="text/css" href="estilo_miel.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
+    <style>
+      * {
+        box-sizing: content-box;
+      }
+      body{
+        background-color: fuchsia;
+        font-family: "Computer Modern Sans";
+      }
+      .miel{
+        font-size: 40pt;
+        color: black;
+        padding: 0 0;
+        margin: 0 0;
+      }
+      .marc{
+        font-size: 32pt;
+      }
+      .barriga{
+        width: 40%;
+      }
+      .debris {
+        display: none;   
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: #ff1100e5;
+        opacity: 1.0;
+        overflow: hidden;
+        border-radius: 15px;
+      }
+      #abeja{
+        width: 40%;
+        margin-bottom: 0%;
+        padding-bottom: 0%;
+        cursor: url(https://cur.cursors-4u.net/food/foo-7/foo635.cur), auto !important;
+      }
+      #explosion {
+        color: rgba(235, 75, 11, 0.911);
+        width: 40%;
+        margin-top: 0%;
+        padding-top: 0%;
+        cursor: url(https://cur.cursors-4u.net/food/foo-7/foo635.cur), auto !important;
+      }
+      @media (max-width: 600px) {
+        body {
+          background-image: none;
+          width: 100%;
+          height: auto;
+          margin-top: 5px;
+          margin-bottom: 5px;
+        }
+        .miel{
+          font-size: 20pt;
+          color: black;
+          padding: 0 0;
+          margin: 0 0;
+        }
+        .marc{
+          font-size: 12pt;
+        }
+        #abeja{
+          width: 85%;
+          margin-bottom: 0%;
+          padding-bottom: 0%;
+          cursor: url(https://cur.cursors-4u.net/food/foo-7/foo635.cur), auto !important;
+        }
+        #explosion {
+          color: rgba(235, 75, 11, 0.911);
+          width: 85%;
+          margin-top: 0%;
+          padding-top: 0%;
+          cursor: url(https://cur.cursors-4u.net/food/foo-7/foo635.cur), auto !important;
+        }
+      }
+    </style>
+    <script>
+      // jQuery bubble pop animation
+        // Ben Ridout (c) 2013 - http://BenRidout.com/?q=bubblepop
+        // You're free to use this code with above attribution (in source is fine).
+
+        $(function () {
+          // Document is ready
+          $("#explosion").on("click", function (e) {
+            pop(e.pageX, e.pageY, 13);
+          });
+        });
+
+        function r2d(x) {
+          return x / (Math.PI / 180);
+        }
+
+        function d2r(x) {
+          return x * (Math.PI / 180);
+        }
+
+        function pop(start_x, start_y, particle_count) {
+          arr = [];
+          angle = 0;
+          particles = [];
+          offset_x = $("#dummy_debris").width() / 2;
+          offset_y = $("#dummy_debris").height() / 2;
+
+          for (i = 0; i < particle_count; i++) {
+            rad = d2r(angle);
+            x = Math.cos(rad) * (80 + Math.random() * 20);
+            y = Math.sin(rad) * (80 + Math.random() * 20);
+            arr.push([start_x + x, start_y + y]);
+            z = $('<div class="debris" />');
+            z.css({
+              "left": start_x - offset_x,
+              "top": start_y - offset_x
+            }).appendTo($("#content"));
+            particles.push(z);
+            angle += 360 / particle_count;
+          }
+
+          $.each(particles, function (i, v) {
+            $(v).show();
+            $(v).animate(
+              {
+                top: arr[i][1],
+                left: arr[i][0],
+                width: 4,
+                height: 4,
+                opacity: 0
+              }, 600, function () {
+                $(v).remove()
+              });
+          });
+        }
+    </script>
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PVM8DWQ" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <marquee class="marc" behavior="scroll" direction="right" scrollamount="20">hola, melisa</marquee>
+    <div class="miel" align="center"> <b>lamiel</b></div>
+      
+    <div align="center">
+      <audio id="bzzz" src="contenido/lamiel/bzzz.mp3" preload="auto"></audio>
+      <img id="abeja" onclick="document.getElementById('bzzz').play();" src="contenido/lamiel/abeja.png" alt="abeja">
+    </div>
+    
+    <div id="content" align="center">
+      <audio id="boom" src="contenido/lamiel/boom.mp3" preload="auto"></audio>
+      <img id="explosion" onclick="document.getElementById('boom').play();" src="contenido/lamiel/ciudad.png" alt="ciudad">
+      <div id="dummy_debris" class="debris"/>
+    </div>
+    <br>
+    <marquee class="marc" behavior="scroll" direction="left" scrollamount="20">hola, melisa</marquee>
+  </body>
+
+</html>

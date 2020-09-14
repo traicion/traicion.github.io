@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166036031-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-166036031-1');
+    </script>
+    <title>traición</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            cursor: url(http://cur.cursors-4u.net/cursors/cur-2/cur116.cur), auto !important;
+        }
+
+        body {
+            background-image: url("https://media.giphy.com/media/QZhjFvKqW5DWqbXKaS/giphy.gif");
+            background-size: cover;
+            background-repeat: repeat-y;
+            background-attachment: fixed;
+            background-color: #C695D5;
+            /*C2E0FF azulito, C695D5 lavanda rosa*/
+            width: 80%;
+            /* gatopardo*/
+            margin-right: auto;
+            margin-left: auto;
+            /* perro puto*/
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-family: "Computer Modern Sans";
+            /*cursor: url(http://cur.cursors-4u.net/cursors/cur-2/cur116.cur), auto !important;*/
+        }
+
+        header {
+            font-family: "Computer Modern Serif";
+            border-color: grey;
+            border-style: solid;
+            background-color: rgb(228, 99, 169);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        .titulo {
+            cursor: pointer;
+        }
+
+        aside {
+            float: left;
+            width: 30%;
+            background: pink;
+            padding: 20px;
+        }
+
+        article {
+            border-left-color: grey;
+            border-left-style: solid;
+            border-right-color: grey;
+            border-right-style: solid;
+            float: left;
+            padding: 10px;
+            width: 100%;
+            background-color: #74C0CC;
+            text-align: center;
+        }
+
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            border-left-color: grey;
+            border-left-style: solid;
+            border-right-color: grey;
+            border-right-style: solid;
+            border-bottom-color: grey;
+            border-bottom-style: solid;
+            background-color: #74C0CC;
+            padding: 20px;
+            text-align: center;
+            color: grey;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: visible;
+            background-color: rgb(51, 16, 16);
+        }
+
+        li {
+            float: left;
+            background-color: rgba(0,0,0,0.05);
+            border-right: 1px solid grey;
+            border-bottom: 1px solid grey;
+        }
+
+        li a, .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover, .dropdown:hover .dropbtn {
+            background-color: rgb(190, 56, 179);
+            border-left: 1px solid grey;
+            border-right: 1px solid grey;
+            border-top: 1px solid grey;
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {background-color: #f1f1f1;}
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .row {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap;
+            /* IE10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+            border-style: solid;
+            border-color: grey;
+            border-top-style: none;
+        }
+
+        /* Create four equal columns that sits next to each other */
+        .column {
+            -ms-flex: 33%;
+            /* IE10 */
+            flex: 33%;
+            max-width: 33%;
+            padding: 0 4px;
+            background-color: pink;
+        }
+
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+            /*cursor: url(http://cur.cursors-4u.net/nature/nat-10/nat977.gif), auto !important;*/
+        }
+
+        .button {
+            background-color: papayawhip;
+            border: grey;
+            border-style: solid;
+            color: black;
+            padding: 10px 18px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: url(http://cur.cursors-4u.net/symbols/sym-1/sym46.cur), auto !important;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe,
+        .video-container object,
+        .video-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .letras {
+            background-color: papayawhip;
+            border: grey;
+            border-style: solid;
+            color: black;
+            padding: 10px 10px;
+            text-align: left;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .letritas {
+            background-color: papayawhip;
+            border: grey;
+            border-style: solid;
+            color: black;
+            padding: 10px 10px;
+            text-align: left;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+        }
+
+        .container img {
+            width: 100%;
+        }
+
+        .container {
+            width: 60%;
+            background: papayawhip;
+            margin: 0 auto;
+        }
+
+        .letritas {
+            width: 100%;
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+            .column {
+                -ms-flex: 50%;
+                flex: 50%;
+                max-width: 50%;
+            }
+
+            body {
+                background-image: none;
+                width: 100%;
+                height: auto;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .column {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+    <script>
+        function shuffle(a) {
+            for (let i = a.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [a[i], a[j]] = [a[j], a[i]];
+            }
+            return a;
+        }
+        var nums = shuffle([...Array(57).keys()]);
+        function crearTag(i) {
+            var img = '<img src=\"contenido/mosh/';
+            img += nums[i];
+            img += '.jpeg\" alt=\"' + nums[i] + '.jpeg\"/>';
+            var tag = img + '</a>';
+            return tag;
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PVM8DWQ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <ul>
+        <li><a href="index.html">traición</a></li>
+        <!--<li><a href="animal.html">animales</a></li>-->
+        <li><a href="password.html">elixires</a></li>
+        <li><a href="lamiel.html">lamiel</a></li>
+        <!--   <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">mosh</a>    DROPDOWN
+        <div class="dropdown-content">
+          <a href="password.html">mosh 1</a>
+          <a href="password.html">mosh 2</a>
+          <a href="password.html">mosh 3</a>
+        </div>
+      </li> -->
+        <li style="float:right; border-left: 1px solid grey;"><a href="contacto.php">contacto</a></li>
+    </ul>
+
+    <header>
+        <div class="titulo"><h1> <a href="index.html" style="text-decoration: none; color: white; cursor:pointer;">traición</a></h1></div>
+    </header>
+    <article style="border-bottom-style: solid;border-bottom-color: grey;">
+        <h1 style="font-size: 40pt; color: ivory;">pociones y elixires</h1>
+        <p style="font-size: 20pt; color: ivory;">(solamente para druidas)</p>
+    </article>
+
+    <div class="row" style="background-color: rgba(221, 47, 198, 0.4); padding-bottom: 8px;">
+        <div class="column">
+            <script type="text/javascript">document.write(crearTag(0));</script>
+            <script type="text/javascript">document.write(crearTag(1));</script>
+            <script type="text/javascript">document.write(crearTag(2));</script>
+            <script type="text/javascript">document.write(crearTag(3));</script>
+            <script type="text/javascript">document.write(crearTag(4));</script>
+            <script type="text/javascript">document.write(crearTag(5));</script>
+            <script type="text/javascript">document.write(crearTag(6));</script>
+            <script type="text/javascript">document.write(crearTag(7));</script>
+            <script type="text/javascript">document.write(crearTag(8));</script>
+            <script type="text/javascript">document.write(crearTag(9));</script>
+            <script type="text/javascript">document.write(crearTag(10));</script>
+            <script type="text/javascript">document.write(crearTag(11));</script>
+            <script type="text/javascript">document.write(crearTag(12));</script>
+            <script type="text/javascript">document.write(crearTag(13));</script>
+            <script type="text/javascript">document.write(crearTag(14));</script>
+            <script type="text/javascript">document.write(crearTag(15));</script>
+            <script type="text/javascript">document.write(crearTag(16));</script>
+            <script type="text/javascript">document.write(crearTag(17));</script>
+            <script type="text/javascript">document.write(crearTag(18));</script>
+            <script type="text/javascript">document.write(crearTag(19));</script>
+        </div>
+        <div class="column">
+            <script type="text/javascript">document.write(crearTag(20));</script>
+            <script type="text/javascript">document.write(crearTag(21));</script>
+            <script type="text/javascript">document.write(crearTag(22));</script>
+            <script type="text/javascript">document.write(crearTag(23));</script>
+            <script type="text/javascript">document.write(crearTag(24));</script>
+            <script type="text/javascript">document.write(crearTag(25));</script>
+            <script type="text/javascript">document.write(crearTag(26));</script>
+            <script type="text/javascript">document.write(crearTag(27));</script>
+            <script type="text/javascript">document.write(crearTag(28));</script>
+            <script type="text/javascript">document.write(crearTag(29));</script>
+            <script type="text/javascript">document.write(crearTag(30));</script>
+            <script type="text/javascript">document.write(crearTag(31));</script>
+            <script type="text/javascript">document.write(crearTag(32));</script>
+            <script type="text/javascript">document.write(crearTag(33));</script>
+            <script type="text/javascript">document.write(crearTag(34));</script>
+            <script type="text/javascript">document.write(crearTag(35));</script>
+            <script type="text/javascript">document.write(crearTag(36));</script>
+            <script type="text/javascript">document.write(crearTag(37));</script>
+        </div>
+        <div class="column">
+            <script type="text/javascript">document.write(crearTag(38));</script>
+            <script type="text/javascript">document.write(crearTag(39));</script>
+            <script type="text/javascript">document.write(crearTag(40));</script>
+            <script type="text/javascript">document.write(crearTag(41));</script>
+            <script type="text/javascript">document.write(crearTag(42));</script>
+            <script type="text/javascript">document.write(crearTag(43));</script>
+            <script type="text/javascript">document.write(crearTag(44));</script>
+            <script type="text/javascript">document.write(crearTag(45));</script>
+            <script type="text/javascript">document.write(crearTag(46));</script>
+            <script type="text/javascript">document.write(crearTag(47));</script>
+            <script type="text/javascript">document.write(crearTag(48));</script>
+            <script type="text/javascript">document.write(crearTag(49));</script>
+            <script type="text/javascript">document.write(crearTag(50));</script>
+            <script type="text/javascript">document.write(crearTag(51));</script>
+            <script type="text/javascript">document.write(crearTag(52));</script>
+            <script type="text/javascript">document.write(crearTag(53));</script>
+            <script type="text/javascript">document.write(crearTag(54));</script>
+            <script type="text/javascript">document.write(crearTag(55));</script>
+            <script type="text/javascript">document.write(crearTag(56));</script>
+        </div>
+    </div>
+    <footer style="color:#ff23cf">
+        <h2><i>tira los dados.</i></h2>
+    </footer>
+    <!--nunca importa nada-->
+</body>
+
+</html>
