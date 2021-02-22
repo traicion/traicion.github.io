@@ -1,9 +1,594 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="es">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166036031-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-166036031-1');
+  </script>
+  <!-- carlitos hizo esto -->
   <title>traición</title>
-  </head>
-  <body>
-    traicionero
-    </body>
-    </html>
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
+  <!-- <link rel="stylesheet" type="text/css" href="estilo_basico.css"> -->
+  <style>
+    * {
+      box-sizing: border-box;
+      cursor: url(http://cur.cursors-4u.net/cursors/cur-2/cur116.cur), auto !important;
+    }
+
+    body {
+      background-image: url("https://media.giphy.com/media/QZhjFvKqW5DWqbXKaS/giphy.gif");
+      background-size: cover;
+      background-repeat: repeat-y;
+      background-attachment: fixed;
+      background-color: #C695D5;
+      /*C2E0FF azulito, C695D5 lavanda rosa*/
+      width: 80%;
+      /* gatopardo*/
+      margin-right: auto;
+      margin-left: auto;
+      /* perro puto*/
+      margin-top: 30px;
+      margin-bottom: 30px;
+      font-family: "Computer Modern Sans";
+      cursor: url(http://cur.cursors-4u.net/cursors/cur-2/cur116.cur), auto !important;
+    }
+
+    header {
+      font-family: "Computer Modern Serif";
+      border-color: grey;
+      border-style: solid;
+      background-color: hotpink;
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+    }
+
+    aside {
+      float: left;
+      width: 30%;
+      background: pink;
+      padding: 20px;
+    }
+
+    article {
+      border-left-color: grey;
+      border-left-style: solid;
+      border-right-color: grey;
+      border-right-style: solid;
+      float: left;
+      padding: 10px;
+      width: 100%;
+      background-color: #74C0CC;
+      text-align: center;
+    }
+
+    section:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    footer {
+      border-left-color: grey;
+      border-left-style: solid;
+      border-right-color: grey;
+      border-right-style: solid;
+      border-bottom-color: grey;
+      border-bottom-style: solid;
+      background-color: #74C0CC;
+      padding: 20px;
+      text-align: center;
+      color: grey;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: visible;
+      background-color: rgb(51, 16, 16);
+    }
+
+    li {
+      float: left;
+      background-color: rgba(0, 0, 0, 0.05);
+      border-right: 1px solid grey;
+      border-bottom: 1px solid grey;
+    }
+
+    li a,
+    .dropbtn {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: rgb(190, 56, 179);
+      border-left: 1px solid grey;
+      border-right: 1px solid grey;
+      border-top: 1px solid grey;
+    }
+
+    li.dropdown {
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .column {
+      border-color: gray;
+      border-style: solid;
+      float: left;
+      padding: 10px;
+      height: auto;
+    }
+
+    .left {
+      width: 0%;
+      background-color: rgba(0, 0, 0, 0.2);
+      color: white;
+      overflow: scroll;
+    }
+
+    .right {
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.10);
+      text-align: center;
+      overflow: scroll;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .button {
+      background-color: papayawhip;
+      border: grey;
+      border-style: solid;
+      color: black;
+      padding: 10px 18px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: url(http://cur.cursors-4u.net/symbols/sym-1/sym46.cur), auto !important;
+    }
+
+    .boton-pags {
+      background-color: hotpink;
+      /* Green */
+      border-color: grey;
+      border-style: solid;
+      color: black;
+      padding: 10px 32px;
+      text-align: center;
+      margin-left: 88px;
+      margin-right: 88px;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      padding-top: 30px;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .letras {
+      background-color: papayawhip;
+      border: grey;
+      border-style: solid;
+      color: black;
+      padding: 10px 10px;
+      text-align: left;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    .letritas {
+      background-color: papayawhip;
+      border: grey;
+      border-style: solid;
+      color: black;
+      padding: 10px 10px;
+      text-align: left;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      align-items: center;
+    }
+
+    .container img {
+      width: 100%;
+    }
+
+    .container {
+      width: 60%;
+      background: papayawhip;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        background-image: none;
+        width: 100%;
+        height: auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+
+      .letritas {
+        width: 100%;
+      }
+    }
+  </style>
+
+  <script type="text/javascript">
+    window.onload = function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src = "https://api.ipify.org?format=jsonp&callback=DisplayIP";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    };
+
+    function DisplayIP(response) {
+      document.getElementById("ipaddress").innerHTML = response.ip;
+    }
+
+    function cambiar() {
+      var x = document.getElementById("cambio");
+      var ipCliente = document.getElementById("ipaddress").textContent;
+      var ipmelanie = '187.207.242.165';
+
+      var sust = ['su instinto', 'su yegua', 'su presa', 'su posada', 'su herida', 'su bodega', 'su persecución',
+        'su vagabundo', 'su escalofrío', 'su dolor', 'su escolta', 'su deseo', 'su niñez', 'su potro', 'su estanque',
+        'su soborno', 'su basura', 'su santuario', 'su sueño', 'su testigo', 'su lavamanos', 'su chorrito',
+        'su capullo', 'su terciopelo', 'su guarida', 'su estremecimiento', 'su puñalada', 'su niebla', 'su intestino',
+        'su hiedra', 'su mandíbula', 'su crujido', 'su rasguño', 'su mirada', 'su mueca', 'su ráfaga', 'su suspiro',
+        'su grito', 'su secuestrador', 'su posibilidades', 'su salto', 'su hombre', 'su sigilo', 'su callejón',
+        'su público', 'su empuñadura', 'su grito', 'su sabueso', 'su hombro', 'su sollozo', 'su cabaña', 'su hocico',
+        'su ira', 'su reino', 'su tratado', 'su sangre', 'su destino', 'su precio', 'su cadáver', 'su esencia',
+        'su escapatoria', 'su vientre', 'su ceja', 'su molestia', 'su abertura', 'su venado', 'su moretón',
+        'su pobreza', 'su levantamiento', 'su vivienda', 'su silla de montar', 'su sabor', 'su centinela',
+        'su inmueble', 'su sabiduría', 'su problema', 'su picadura', 'su suciedad', 'su cicatriz', 'su nausea',
+        'su mármol', 'su espiral', 'su cuento', 'su acantilado', 'su gente', 'su cuna', 'su decisión', 'su orilla',
+        'su lealtad', 'su prostituta', 'su multitud', 'su bacalao', 'su límite', 'su recado', 'su alabanza',
+        'su trigo', 'su daño', 'su alcantarilla', 'su rostro', 'su recluta', 'su señuelo', 'su montón', 'su piojos',
+        'su cartílago', 'su granero', 'su penumbra', 'su pantano', 'su paja', 'su cobertizo', 'su riqueza',
+        'su profundidad', 'su actitud', 'su filete', 'su habitante', 'su máscara', 'su rata', 'su ratón',
+        'su conciencia', 'su perrito', 'su alma', 'su muestra', 'su resultado', 'su ingresos', 'su significado',
+        'su suposición', 'su lesión', 'su mejilla', 'su juventud', 'su golpe de estado', 'su portafolio',
+        'su oportunidad', 'su arte', 'su maceta', 'su apelación', 'su ensayo', 'su tripulación', 'su gancho',
+        'su facilidad', 'su brecha', 'su préstamo', 'su manojo', 'su verguenza', 'su abrigo', 'su empleado',
+        'su jurado', 'su orgullo', 'su premio', 'su ascensor', 'su ganancia', 'su cerca', 'su berrinche', 'su humor',
+        'su inundación', 'su aguacero', 'su alacena', 'su pinchazo', 'su secreto', 'su sacudida', 'su quejido',
+        'su risa', 'su paquete', 'su virginidad', 'su sudor', 'su peluca', 'su corteza', 'su desorden',
+        'su golondrina', 'su sonrojo', 'su agujerito', 'su trapo', 'su muleta', 'su hundimiento', 'su rejilla',
+        'su escarabajo', 'su choza', 'su humedad', 'su arado', 'su felpudo', 'su estante', 'su vínculo', 'su síntoma',
+        'su partido', 'su cosecha', 'su persona', 'su cangrejo', 'su desfile', 'su arroyo', 'su creencia',
+        'su ciervo', 'su argumento', 'su ánimo', 'su conferencia', 'su baya', 'su entusiasmo', 'su temblor',
+        'su riña', 'su tronco', 'su uña del pie', 'su sala', 'su hierbabuena', 'su pensión', 'su estrofa', 'su piel',
+        'su pareja', 'su farmacéutico', 'su proposición', 'su campo', 'su engañar', 'su cartón', 'su bienestar',
+        'su estima', 'su alfarería', 'su vista', 'su afueras', 'su vecino', 'su tumba', 'sus plantas', 'su raza',
+        'su cintura', 'su reparto', 'su bostezo', 'su humanidad', 'su presupuesto', 'su pasado', 'su futuro',
+        'su reventón', 'su párpado', 'su aroma', 'su retrato', 'su sed', 'su crucero', 'su pandilla', 'su genio',
+        'su envidia', 'su viga', 'su tribu', 'su pan de molde', 'su varita mágica', 'su vinagre', 'su desesperación',
+        'su budín', 'su zumbido', 'su dosis', 'su habla', 'su roble', 'su tensión', 'su montón', 'su cocodrilo',
+        'su ropa sucia', 'su mutación', 'su enfermera', 'su nube', 'su ilustración', 'su restauración', 'su encía',
+        'su llama', 'su rastro', 'su guardería', 'su libra', 'su tipo', 'su chisme', 'su parachoques', 'su crianza',
+        'su prueba', 'su estornudo', 'su medio', 'su rebelde', 'su bronceado', 'su robo', 'su ganga', 'su indirecta',
+        'su desorden', 'su culpabilidad', 'su seguridad', 'su paso', 'su desafío', 'su parpadeo', 'su pestaña',
+        'su taburete', 'su tono', 'su valentía', 'su placer', 'su hurra', 'su sala', 'su coro', 'su chapoteo',
+        'su tonelada', 'su guión', 'su templo', 'su yate', 'su pendiente', 'su rasgadura', 'su dignidad', 'su sudor',
+        'su folleto', 'su bandeja', 'su vicio', 'su lujo', 'su engaño', 'su marea', 'su cisne', 'su escultura',
+        'su asunto', 'su vástago', 'su tortura', 'su encanto', 'su licor', 'su rito', 'su maldición', 'su estable',
+        'su dormitorio', 'su aborto', 'su desprecio', 'su campesino', 'su pierna', 'su atuendo', 'su apuesta',
+        'su estaca', 'su alba', 'su hacha', 'su emboscada', 'su foso', 'su gallo', 'su pega', 'su comadreja',
+        'su viñedo', 'su griego', 'su espuma', 'su traste', 'su postura', 'su tallado', 'su suela', 'su ramita',
+        'su cuervo', 'su oración', 'su apodo', 'su vena', 'su rebelión', 'su pastor', 'su profecía', 'su broche',
+        'su escoba', 'su madriguera', 'su pradera', 'su familia', 'su mamá', 'su papá', 'su hijo', 'su hija',
+        'su apología', 'su educación', 'su carne', 'su charco', 'su caldo', 'su ermitaño', 'su remordimiento',
+        'su gruñido', 'su trampa', 'su umbral', 'su queja', 'su verruga', 'su sarna', 'su hedor', 'su sello',
+        'su ganso', 'su porquería', 'su enjambre', 'su sacrificio', 'su fantasma', 'su heredera', 'su prisa',
+        'su trote', 'su médula', 'su comprensión', 'su vacuna', 'su egoísmo', 'su avaricia', 'su suero de leche',
+        'su habilidad', 'su violinista', 'su calumnia', 'su funeral', 'su plaga', 'su indigente', 'su rincón',
+        'su grieta', 'su marioneta', 'su gaviota', 'su virtud', 'su capricho', 'su empujón', 'su muchacha',
+        'su florero', 'su rabieta', 'su puerto', 'su corcel', 'su sombra', 'su atraco', 'su lejía', 'su hinchazón',
+        'su sapo', 'su excursión', 'su astilla', 'su coraza', 'su cáliz', 'su deformación', 'su hoyuelo',
+        'su manguera', 'su grifo', 'su bocado', 'su inanición', 'su brocheta', 'su útero', 'su destello', 'su sofá',
+        'su losa', 'su ternero', 'su madera', 'su losa', 'su sofá', 'su llovizna', 'su pedazo', 'su mermelada',
+        'su lástima', 'su hueco', 'su trago', 'su brillo', 'su mancha', 'su castigo', 'su vendaval', 'su esguince',
+        'su hebilla', 'su responsabilidad', 'su rabia', 'su cálculo', 'su combate', 'su trenza', 'su molestia',
+        'su suelo', 'su senderismo', 'su proceso', 'su miembro', 'su gamba', 'su césped', 'su chatarra',
+        'su singularidad', 'su lata', 'su espectro', 'su cansancio', 'su contrato de arrendamiento',
+        'su mejor amigo de prepri', 'su confianza', 'su sacrificio', 'su juramento', 'su tía', 'su cerebro',
+        'su cráneo', 'su secta', 'su majestad', 'su pez', 'su causa', 'su entierro', 'su cártel', 'su nombre',
+        'su tulpa', 'su pronóstico climatológico', 'su reino', 'su estrella', 'su zodiaco', 'su dios', 'su diosa',
+        'su patria', 'su licenciado', 'su tierra', 'su filosofía', 'su líder', 'su tropa', 'su amiga taylor swift',
+        'su dogma', 'su carrera como youtuber', 'su anime favorito', 'su waifu', 'su suculenta', 'su ejecutor',
+        'su wey, el manitas', 'su elefante', 'su boeing 747', 'su muerte', 'su colección de hot wheels',
+        'su institución terrorista', 'su grupo de danza contemporánea', 'su sexualidad', 'su domicilio, empresa 119',
+        'su título nobiliario', 'su abuela', 'su colonia', 'su intelegencia artificial', 'su robot', 'sus principios',
+        'sus amigos', 'sus ideales', 'sus antepasados', 'su obra', 'sus raíces', 'su cuaco', 'su mitología', 'su sal',
+        'su banda de möbius', 'su industria', 'base de datos', 'su hermana', 'su paisaje',
+        'su adicción a las apuestas', 'su drogadicción', 'su terapeuta', 'su estatus', 'su sistema nervioso',
+        'su independencia', 'su soberanía', 'su continente', 'su doctora', 'su bombero', 'la policía', 'su universo',
+        'la galaxia', 'su franquicia', 'la tiendita de su esquina', 'su caverna', 'su taxonomía', 'la zoología',
+        'su zoológico', 'las ciencias', 'su nomenclatura', 'los niños héroes',
+        'la celebración del natalicio de Benito Juárez', 'las montañas', 'los montes', 'su expresión',
+        'su responsabilidad', 'el fauvismo', 'las vacunas', 'el barroco', 'su labor artística', 'su patio de recreo',
+        'su estilo', 'los caminos de la vida', 'su parásito', 'su reflejo', 'su medio de transporte', 'su raza',
+        'su especie', 'su boing de mango', 'el sueño americano', 'las palomas', 'las caguamas', 'las hortensias'
+      ]
+
+      var nombres = ['melanie', 'jaime', 'carlos', 'piero', 'gerónimo', 'martín', 'mosh', 'el coronabirus', 'andrea',
+        'ada', 'adrián', 'adriana', 'ana', 'juan', 'leonardo', 'leobardo', 'alejandro', 'alejandra', 'alfonso',
+        'alfonsina', 'alonso', 'josé', 'giovanna', 'amanda', 'giovanni', 'ángel', 'anahí', 'annia', 'bárbara',
+        'rodrigo', 'nichola', 'el charly', 'elías', 'fiona', 'mauricio', 'sócrates', 'mariana', 'susana', 'osvaldo',
+        'camila', 'miguel', 'eduardo', 'ángeles', 'lorenia', 'chebo', 'paula', 'cristina pérez', 'paloma', 'diego',
+        'david', 'patricio', 'daniela', 'daniel', 'dabriel', 'gabriel', 'alicia', 'pilar', 'estefanía', 'edgar',
+        'elisa', 'ella', 'emanuel', 'erik', 'eric', 'mari', 'fausto', 'federico', 'felipe', 'fernando', 'fernanda',
+        'el flaco', 'renata', 'gabriela', 'katina', 'regina', 'natalia', 'germán', 'eugenio', 'gerardo', 'marina',
+        'iñaki', 'chiara', 'sebastián', 'maría josé', 'pedro', 'rafael', 'marcelo', 'inés', 'isaí', 'israel',
+        'itziar', 'iván', 'ximena', 'josé alfredo', 'lester', 'lorea', 'lorenza', 'lucía', 'manuel', 'maría',
+        'marian', 'morty', 'melanie', 'aitana', 'michel', 'enrique', 'norma', 'dios', 'anacleto', 'matilde',
+        'montserrat', 'uziel', 'emilio', 'emiliano', 'nacho', 'oscar', 'paulina', 'karla', 'isaac', 'aarón',
+        'ricardo', 'ramón', 'lilián', 'rua', 'arturo', 'beto', 'consuelo', 'mateo', 'soledad', 'victoria', 'santiago',
+        'sara', 'miranda', 'carolina', 'melanie', 'tania', 'talía', 'armando', 'jazmín', 'toño', 'pablo', 'gonzalo',
+        'sergio', 'valeria', 'valentina', 'fábio', 'witzu', 'roger', 'arantza', 'payo', 'luis', 'ernesto', 'atl',
+        'brando', 'braulio', 'jared', 'héctor', 'maría inés', 'damaris', 'danson', 'kevin', 'mark', 'roberto',
+        'roberta', 'paulo', 'edith', 'melissa', 'fermín', 'poncho', 'mónica', 'gregorio', 'alex', 'hilda', 'sofía',
+        'amaro', 'jordi', 'josué', 'julio pastor', 'julio', 'karen', 'kenny', 'saúl', 'kaori', 'fátima', 'larissa',
+        'graciela', 'salvador', 'eugenia', 'mariano', 'asunción', 'omar', 'margarita', 'javier', 'nuria', 'baldomero',
+        'bonifacio', 'valdemar', 'baltazar', 'nicolás', 'cassandra', 'vladimir', 'patricia', 'orlando', 'canela',
+        'aldo', 'iron man', 'mazurek', 'amatto', 'marixsol', 'alma', 'alexa', 'pía', 'joseal', 'brenda', 'raúl',
+        'danielle', 'samuel', 'leticia', 'verónica', 'jorge', 'benito', 'alexander', 'joshua', 'ulises', 'evelyn',
+        'ivana', 'carolina', 'valerio', 'mauro', 'bob', 'mario', 'manu chao', 'león', 'marcela', 'tomás', 'olivia',
+        'gera', 'pío'
+      ];
+
+      rand_sust = Math.floor(Math.random() * (sust.length - 1));
+      rand_nombres = Math.floor(Math.random() * (nombres.length - 1));
+
+      if (ipCliente == ipmelanie) {
+        x.innerHTML = "melanie traicionó a " + sust[rand_sust] + ".";
+      } else {
+        x.innerHTML = nombres[rand_nombres] + " traicionó a " + sust[rand_sust] + ".";
+      }
+    }
+    /*
+    document.addEventListener('DOMContentLoaded', function() {
+      cambiar();
+    }, false);
+    */
+  </script>
+
+</head>
+
+<!---           ---------------------------------------------               --->
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PVM8DWQ" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <marquee scrolldelay=10 scrollamount=10>
+    <h3 style="color: ivory;">mosh traicionó a una perra policía.</h3>
+  </marquee>
+
+  <ul>
+    <li><a href="index.html">traición</a></li>
+    <!--<li><a href="animal.html">animales</a></li>-->
+    <li><a href="password.html">elixires</a></li>
+    <li><a href="lamiel.html">lamiel</a></li>
+    <!--   <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">mosh</a>    DROPDOWN
+    <div class="dropdown-content">
+      <a href="password.html">mosh 1</a>
+      <a href="password.html">mosh 2</a>
+      <a href="password.html">mosh 3</a>
+    </div>
+  </li> -->
+    <li style="float:right; border-left: 1px solid grey;"><a href="contacto.php">contacto</a></li>
+  </ul>
+
+
+  <header>
+    <h1>traición</h1>
+    <strong style="color: #47332A; " id="cambio"></strong>
+  </header>
+
+  <article>
+    <p><button class="button" , onclick="cambiar()">traicionar</button></p>
+  </article>
+
+  <!--   <article style="background-color:papayawhip;border-top-style:solid;border-top-color:grey;">
+    <button class="boton-pags">animales</button>
+    <button class="boton-pags">password</button>
+    <button class="boton-pags">digital</button>
+  </article> -->
+
+  <div class="row">
+    <div class="column right">
+
+      <div class="letras">
+        <h3 align="center">jesús muere en la cruz.</h3>
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/E8zCELVMYmE" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p align="right">cuarto viernes de 2020.</p>
+      </div>
+
+      <div class="letras">
+        <h3 align="center">jesús es bajado de la cruz y puesto en los brazos de su madre maría.</h3>
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/DRSk192T1_k" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p align="right">pascua de 2020.</p>
+      </div>
+
+      <div class="letras" style="align-items: center;">
+        <h3 align="center">jesús cae por tercera vez.</h3>
+        <div class="container" style="width: 70%;">
+          <img src="contenido/jesusCaePt3.jpeg" alt="jesusCaePt3">
+        </div>
+        <br>
+        <p align="right">pascua de 2020.</p>
+      </div>
+
+      <div class="letras">
+        <h3 align="center">jesús es traicionado por judas (2:15).</h3>
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/zJYekZPov-Q" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p align="right">pascua de 2020.</p>
+      </div>
+
+
+      <div class="letras">
+        <br>
+        <div class="container" style="width: 50%;">
+          <img src="contenido/esfera.jpeg" alt="esfera">
+        </div>
+        <figure>
+          <p><br>
+            según las olas se formaron,<br>
+            acochinado puerco -carmesí-;<br>
+            sordas patas que monjilvidaron.<br> <br>
+            si el impresionismo fuese cierto,<br>
+            ante el hielo me presentaría yerto.<br>
+            me voy a chingar a un wey en Barranca del muerto.</p>
+          <figcaption>- efrén, primavera de 2019.</figcaption>
+        </figure>
+      </div>
+
+      <div class="letras">
+        <h3 align="center">el hijo del chacuaco.</h3>
+        <div align="center">
+          <audio style="vertical-align: middle;" controls>
+            <source src="contenido/chacuaco.ogg" type="audio/ogg">
+            <source src="contenido/chacuaco.mp3" type="audio/mpeg">
+            Aquí debería estar el audio. Pero no está.
+          </audio>
+        </div>
+        <p align="right">verano de 2019.</p>
+      </div>
+
+      <div class="letras">
+        <!-- ya no foto de gallo -->
+        <div align="center">
+          <h3>características de un gallo fino:</h3>
+          <p>bien jugado</p>
+          <p>bien representado</p>
+          <p>bien ganado</p>
+        </div>
+        <p align="right">fiesta del gallo queretano de 2019.</p>
+      </div>
+
+      <div class="letras">
+        <h3 align="center">oh! las aventuras del señor larre</h3>
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/SHT5SL4JMPU" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p align="right">verano de 2018.</p>
+      </div>
+
+      <div class="letras">
+        <h3 align="center">trapiche.</h3>
+        <div align="center">
+          <audio style="vertical-align: middle;" controls>
+            <source src="contenido/rotoplas.ogg" type="audio/ogg">
+            <source src="contenido/rotoplas.mp3" type="audio/mpeg">
+            Aquí debería estar el audio. Pero no está.
+          </audio> <br>
+          <br>
+          <audio style="vertical-align: middle;" controls>
+            <source src="contenido/elevador.ogg" type="audio/ogg">
+            <source src="contenido/elevador.mp3" type="audio/mpeg">
+            Aquí debería estar el audio. Pero no está.
+          </audio>
+        </div>
+        <p align="right">cuernavaca de 2018.</p>
+      </div>
+
+    </div> <!-- columna derecha -->
+  </div> <!-- columnas -->
+
+  <footer>
+    <div align="left"><a href="contenido/confesion.jpg" style="color: #74C0CC;">8</a></div>
+    <h3><a href="https://drive.google.com/file/d/1RaHsm4hxKSk3Yfeyg4Lz9C2Um0UAaU3n/view?usp=sharing"
+        style="color: #f13be8"> <i>términos y condiciones.</i></a></h3>
+    <span id="ipaddress" style="color: #74C0CC;"></span>
+    <div align="right"><a href="https://i.imgur.com/bRzvbVq.jpg" style="color: #74C0CC;">O</a></div>
+  </footer>
+</body>
+
+</html>
