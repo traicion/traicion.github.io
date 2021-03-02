@@ -159,10 +159,15 @@
     .column {
       border-color: gray;
       border-style: solid;
-      float: left;
-      padding: 10px;
-      height: auto;
-      width: auto;
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
+    }
+
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
     }
 
     .left {
@@ -179,10 +184,11 @@
       overflow: scroll;
     }
 
-    .row:after {
+    .row {
       content: "";
-      display: table;
-      clear: both;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 4px;
     }
 
     .button {
@@ -270,6 +276,13 @@
       margin: 0 auto;
     }
 
+    @media screen and (max-width: 800px) {
+      .column {
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+
     @media (max-width: 600px) {
       body {
         background-image: none;
@@ -277,6 +290,8 @@
         height: auto;
         margin-top: 5px;
         margin-bottom: 5px;
+        flex: 100%;
+        max-width: 100%;
       }
 
       .letritas {
@@ -331,7 +346,7 @@
     function crearTag(i) {
       var img = '<img src=\"contenido/animales/';
       img += nums[i];
-      img += '.jpg\" alt=\"' + nums[i] + '.jpg\"/>';
+      img += '.jpg\" alt=\"' + nums[i] + '.jpg\" height=\"auto\" />';
       var hyper = '<a href=\"' + paginas[nums[i]] + '\">';
       var tag = hyper + img + '</a>';
       return tag;
