@@ -22,271 +22,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css"
         href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
-    <style>
-        * {
-            box-sizing: border-box;
-            cursor: url(http://cur.cursors-4u.net/cursors/cur-2/cur116.cur), auto !important;
-        }
-
-        body {
-            background-image: url("https://media.giphy.com/media/QZhjFvKqW5DWqbXKaS/giphy.gif");
-            background-size: cover;
-            background-repeat: repeat-y;
-            background-attachment: fixed;
-            background-color: #C695D5;
-            /*C2E0FF azulito, C695D5 lavanda rosa*/
-            width: 80%;
-            /* gatopardo*/
-            margin-right: auto;
-            margin-left: auto;
-            /* perro puto*/
-            margin-top: 30px;
-            margin-bottom: 30px;
-            font-family: "Computer Modern Sans";
-            /*cursor: url(http://cur.cursors-4u.net/cursors/cur-2/cur116.cur), auto !important;*/
-        }
-
-        header {
-            font-family: "Computer Modern Serif";
-            border-color: grey;
-            border-style: solid;
-            background-color: rgb(228, 99, 169);
-            padding: 30px;
-            text-align: center;
-            font-size: 35px;
-            color: white;
-        }
-
-        .titulo {
-            cursor: pointer;
-        }
-
-        aside {
-            float: left;
-            width: 30%;
-            background: pink;
-            padding: 20px;
-        }
-
-        article {
-            border-left-color: grey;
-            border-left-style: solid;
-            border-right-color: grey;
-            border-right-style: solid;
-            float: left;
-            padding: 10px;
-            width: 100%;
-            background-color: #74C0CC;
-            text-align: center;
-        }
-
-        section:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        footer {
-            border-left-color: grey;
-            border-left-style: solid;
-            border-right-color: grey;
-            border-right-style: solid;
-            border-bottom-color: grey;
-            border-bottom-style: solid;
-            background-color: #74C0CC;
-            padding: 20px;
-            text-align: center;
-            color: grey;
-        }
-
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: visible;
-            background-color: rgb(51, 16, 16);
-        }
-
-        li {
-            float: left;
-            background-color: rgba(0, 0, 0, 0.05);
-            border-right: 1px solid grey;
-            border-bottom: 1px solid grey;
-        }
-
-        li a,
-        .dropbtn {
-            display: inline-block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        li a:hover,
-        .dropdown:hover .dropbtn {
-            background-color: rgb(190, 56, 179);
-            border-left: 1px solid grey;
-            border-right: 1px solid grey;
-            border-top: 1px solid grey;
-        }
-
-        li.dropdown {
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #f1f1f1;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .row {
-            display: -ms-flexbox;
-            /* IE10 */
-            display: flex;
-            -ms-flex-wrap: wrap;
-            /* IE10 */
-            flex-wrap: wrap;
-            padding: 0 4px;
-            border-style: solid;
-            border-color: grey;
-            border-top-style: none;
-        }
-
-        /* Create four equal columns that sits next to each other */
-        .column {
-            -ms-flex: 33%;
-            /* IE10 */
-            flex: 33%;
-            max-width: 33%;
-            padding: 0 4px;
-            background-color: pink;
-        }
-
-        .column img {
-            margin-top: 8px;
-            vertical-align: middle;
-            width: 100%;
-            /*cursor: url(http://cur.cursors-4u.net/nature/nat-10/nat977.gif), auto !important;*/
-        }
-
-        .button {
-            background-color: papayawhip;
-            border: grey;
-            border-style: solid;
-            color: black;
-            padding: 10px 18px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: url(http://cur.cursors-4u.net/symbols/sym-1/sym46.cur), auto !important;
-        }
-
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            padding-top: 30px;
-            height: 0;
-            overflow: hidden;
-        }
-
-        .video-container iframe,
-        .video-container object,
-        .video-container embed {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        .letras {
-            background-color: papayawhip;
-            border: grey;
-            border-style: solid;
-            color: black;
-            padding: 10px 10px;
-            text-align: left;
-            margin-top: 15px;
-            margin-bottom: 15px;
-        }
-
-        .letritas {
-            background-color: papayawhip;
-            border: grey;
-            border-style: solid;
-            color: black;
-            padding: 10px 10px;
-            text-align: left;
-            margin-top: 15px;
-            margin-bottom: 15px;
-            width: 70%;
-            margin-left: auto;
-            margin-right: auto;
-            align-items: center;
-        }
-
-        .container img {
-            width: 100%;
-        }
-
-        .container {
-            width: 60%;
-            background: papayawhip;
-            margin: 0 auto;
-        }
-
-        .letritas {
-            width: 100%;
-        }
-
-        /* Responsive layout - makes a two column-layout instead of four columns */
-        @media screen and (max-width: 800px) {
-            .column {
-                -ms-flex: 50%;
-                flex: 50%;
-                max-width: 50%;
-            }
-
-            body {
-                background-image: none;
-                width: 100%;
-                height: auto;
-                margin-top: 5px;
-                margin-bottom: 5px;
-            }
-        }
-
-        @media screen and (max-width: 600px) {
-            .column {
-                -ms-flex: 100%;
-                flex: 100%;
-                max-width: 100%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="estilo_basico.css">
     <script>
         function shuffle(a) {
             for (let i = a.length - 1; i > 0; i--) {
@@ -315,10 +51,10 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <ul>
-        <li><a href="index.html">traición</a></li>
-        <!--<li><a href="animal.html">animales</a></li>-->
-        <li><a href="password.html">elixires</a></li>
-        <li><a href="lamiel.html">lamiel</a></li>
+        <li><a href="index">traición</a></li>
+        <li><a href="animal">animales</a></li>
+        <li><a href="password">elixires</a></li>
+        <li><a href="lamiel">lamiel</a></li>
         <!--   <li class="dropdown">
         <a href="javascript:void(0)" class="dropbtn">mosh</a>    DROPDOWN
         <div class="dropdown-content">
@@ -327,7 +63,7 @@
           <a href="password.html">mosh 3</a>
         </div>
       </li> -->
-        <li style="float:right; border-left: 1px solid grey;"><a href="contacto.php">contacto</a></li>
+        <li style="float:right; border-left: 1px solid grey;"><a href="contacto">contacto</a></li>
     </ul>
 
     <header>
@@ -340,8 +76,8 @@
         <p style="font-size: 20pt; color: ivory;">(solamente para druidas)</p>
     </article>
 
-    <div class="row" style="background-color: rgba(221, 47, 198, 0.4); padding-bottom: 8px;">
-        <div class="column">
+    <div class="filita" style="background-color: rgba(221, 47, 198, 0.4); padding-bottom: 8px;">
+        <div class="columnita">
             <script type="text/javascript">
                 document.write(crearTag(0));
             </script>
@@ -403,7 +139,7 @@
                 document.write(crearTag(19));
             </script>
         </div>
-        <div class="column">
+        <div class="columnita">
             <script type="text/javascript">
                 document.write(crearTag(20));
             </script>
@@ -459,7 +195,7 @@
                 document.write(crearTag(37));
             </script>
         </div>
-        <div class="column">
+        <div class="columnita">
             <script type="text/javascript">
                 document.write(crearTag(38));
             </script>
